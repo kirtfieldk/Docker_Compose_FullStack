@@ -1,0 +1,19 @@
+.half-white {
+  width: 100vw;
+  min-height: 50vh;
+}
+.large {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+.half-blue {
+  width: 100vw;
+  height: 50vh;
+  background-color: aqua;
+}
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,17 @@
+version: "3"
+services:
+  web:
+    build: client
+    ports:
+      - "3000:3000"
+  api:
+    build: backend
+    ports:
+      - "5000:5000"
+    links:
+      - database # link this service to the database service
+ 
+  database: # name of the third service
+    image: mongo # specify image to build container from
+    ports:
+      - "27017:27017" # specify port forwarding
